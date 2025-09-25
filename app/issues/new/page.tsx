@@ -1,5 +1,6 @@
-import { Button, TextArea, TextField } from '@radix-ui/themes';
+import { Button, TextField } from '@radix-ui/themes';
 import React from 'react';
+import SimpleMDEWrapper from '../../components/SimpleMDEWrapper';
 
 const NewIssuePage = () => {
   return (
@@ -7,7 +8,7 @@ const NewIssuePage = () => {
       <TextField.Root placeholder='Title'>
         <TextField.Slot />
       </TextField.Root>
-      <TextArea placeholder='Description' />
+      <SimpleMDEWrapper placeholder='Description' />
       <Button>Submit New Issue</Button>
     </div>
   );
